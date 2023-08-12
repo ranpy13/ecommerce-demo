@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% load static %}
+
+{% block content %}
+	<!-- breadcrumb -->
+	<div class="container">
+		
+			
+		</div>
+	</div>
+
+
+	<!-- Content page -->
+	<section class="bg0 p-t-52 p-b-20">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-lg-9 p-b-80">
+					<div class="p-r-45 p-r-0-lg">
+						<!--  -->
+						<div class="wrap-pic-w how-pos5-parent">
+							
+						</div>
+
+						<div class="p-t-32">
+							
+						<!--  -->
+						<div class="p-t-40">
+							<h5 class="mtext-113 cl2 p-b-12">
+								Edit Profile
+							</h5>
+
+							<p class="stext-107 cl6 p-b-40">
+								Your email address will not be published. Required fields are marked *
+							</p>
+
+							<form  method="POST" enctype= multipart/form-data>
+								{% csrf_token %}
+											{% bootstrap_form userform %}
+											{% bootstrap_form profileform %}
+											<p><a href="{% url 'password_change' %}">Change password?</a></p>
+											{% buttons %}
+											 
+											  
+								<button class="flex-c-m stext-101 cl0 size-125 bg3 bor2 hov-btn3 p-lr-15 trans-04">
+									Save
+									</button>
+											{% endbuttons %}
+								
+
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 p-b-80">
+					
+						</div>
+
+						<div class="p-t-65">
+							
+		</div>
+	</section>	
+	
+		
+{% endblock content %}
+
