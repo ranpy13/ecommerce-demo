@@ -1,1 +1,0 @@
-# Contents for the shop 
