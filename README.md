@@ -21,3 +21,6 @@ Create a new user in your MySQL local instance with the above details and verify
 ## Conclusion
 Do the configurations as required, and then run using
 	```python manage.py runserver```
+
+## Try out the demo website here:
+https://cozastore.netlify.app/
